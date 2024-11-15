@@ -46,4 +46,4 @@
 1. Clone this repository:
 https://github.com/Zohaib420/MedMarket-Android-App.git
 
-##Auther- Muhammad Zohaib
+## Auther - Muhammad Zohaib
