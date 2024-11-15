@@ -44,6 +44,6 @@
 
 ## Installation & Setup
 1. Clone this repository:
-https://github.com/Zohaib420/MedMarket-Android-App.git
+git clone https://github.com/Zohaib420/MedMarket-Android-App.git
 
 ## Auther - Muhammad Zohaib
