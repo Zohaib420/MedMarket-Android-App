@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_navigation.xml"
+    app:startDestination="@id/clinetHomeFragment">
+
+    <fragment
+        android:id="@+id/clinetHomeFragment"
+        android:name="com.hash.medmarket.ui.client.fragments.home.ClientHomeFragment"
+        android:label="fragment_clinet_home"
+        tools:layout="@layout/fragment_client_home" >
+        <action
+            android:id="@+id/action_clinetHomeFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+        <action
+            android:id="@+id/action_clinetHomeFragment_to_clientMedicineFragment"
+            app:destination="@id/clientMedicineFragment" />
+        <action
+            android:id="@+id/action_clinetHomeFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment2"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.notification.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/myOrdersFragment2"
+        android:name="com.hash.medmarket.ui.client.fragments.myOrders.MyOrdersFragment"
+        android:label="fragment_my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/myAccountFragment2"
+        android:name="com.hash.medmarket.ui.client.fragments.myAccount.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/helpFragment2"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.support.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/clientMedicineFragment"
+        android:name="com.hash.medmarket.ui.client.fragments.home.medicines.ClientMedicineFragment"
+        android:label="fragment_client_medicine"
+        tools:layout="@layout/fragment_client_medicine" >
+        <action
+            android:id="@+id/action_clientMedicineFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+        <action
+            android:id="@+id/action_clientMedicineFragment_to_prescriptionFragment"
+            app:destination="@id/prescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.hash.medmarket.ui.client.fragments.home.checkout.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" />
+    <fragment
+        android:id="@+id/prescriptionFragment"
+        android:name="com.hash.medmarket.ui.client.fragments.home.prescription.PrescriptionFragment"
+        android:label="fragment_prescription"
+        tools:layout="@layout/fragment_prescription" />
+</navigation>

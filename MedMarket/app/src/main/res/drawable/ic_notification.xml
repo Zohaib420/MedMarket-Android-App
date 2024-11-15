@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <group
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:translateX="-10.5"
+        android:translateY="-10.5">
+        <clip-path
+            android:pathData="M0,0h30v30h-30z"
+            tools:ignore="VectorRaster" />
+        <path
+            android:fillColor="#fff"
+            android:fillType="evenOdd"
+            android:pathData="M15,7.111a5.117,5.117 0,0 0,-5.117 5.117v1.706a5.969,5.969 0,0 1,-1.194 3.582l-0.182,0.244 -0.013,0.016h0c-0.05,0.066 -0.09,0.121 -0.118,0.165a1.279,1.279 0,0 0,0.98 1.959c0.05,0 0.119,0 0.2,0h10.884c0.084,0 0.152,0 0.2,0a1.279,1.279 0,0 0,0.979 -1.959c-0.027,-0.043 -0.068,-0.1 -0.118,-0.165l-0.013,-0.016 -0.183,-0.244a5.969,5.969 0,0 1,-1.194 -3.582v-0.583c0,-0.14 0,-0.21 -0.04,-0.248s-0.117,-0.033 -0.27,-0.026c-0.038,0 -0.077,0 -0.116,0s-0.078,0 -0.116,0c-0.153,-0.008 -0.23,-0.012 -0.27,0.026s-0.04,0.108 -0.04,0.248v0.583a6.821,6.821 0,0 0,1.365 4.094l0.182,0.244 0.07,0.093 0.017,0.024 0,0.006h0v0h0a0.425,0.425 0,0 1,-0.326 0.652L9.423,19.047a0.425,0.425 0,0 1,-0.327 -0.652h0v0l0,-0.006 0.017,-0.024 0.07,-0.093 0.182,-0.244a6.821,6.821 0,0 0,1.365 -4.094v-1.706a4.264,4.264 0,0 1,7.288 -3.007c0.09,0.09 0.134,0.135 0.182,0.138s0.1,-0.037 0.206,-0.116a2.253,2.253 0,0 1,0.2 -0.133c0.151,-0.089 0.226,-0.133 0.235,-0.194s-0.044,-0.117 -0.151,-0.228A5.1,5.1 0,0 0,15 7.111Z" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M19.69,10.949m-1.279,0a1.279,1.279 0,1 1,2.558 0a1.279,1.279 0,1 1,-2.558 0" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M12.94,21.309a2.133,2.133 0,0 0,4.119 0"
+            android:strokeWidth="1"
+            android:strokeColor="#fff"
+            android:strokeLineCap="round" />
+    </group>
+</vector>

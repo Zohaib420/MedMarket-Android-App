@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "841166297590",
+    "project_id": "medmarket-49026",
+    "storage_bucket": "medmarket-49026.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841166297590:android:f09c7682241bdbda468fd7",
+        "android_client_info": {
+          "package_name": "com.hash.medmarket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA98GbcTl2ZxhGFbfreEESmrXMnRjjo7zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

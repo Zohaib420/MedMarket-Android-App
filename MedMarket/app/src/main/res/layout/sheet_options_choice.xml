@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <View
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_ripple_blue_12" />
+
+    <TextView
+        android:id="@+id/camera_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/ic_ripple_white_12"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="Camera"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:drawableStartCompat="@drawable/ic_camera"
+        app:drawableTint="@color/blue_500" />
+
+
+    <TextView
+        android:id="@+id/gallery_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/ic_ripple_white_12"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="Gallery"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:drawableStartCompat="@drawable/ic_image"
+        app:drawableTint="@color/blue_500" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_stroke"
+    android:layout_margin="@dimen/_6sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID: ABC123"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+
+
+    <TextView
+        android:id="@+id/text_order_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Order Date: January 1, 2022"
+        android:textSize="14sp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toStartOf="@id/text_order_id"
+        app:layout_constraintTop_toBottomOf="@id/text_order_id"
+        android:layout_marginTop="4dp"/>
+
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="@id/text_order_date"
+        app:layout_constraintTop_toBottomOf="@id/text_order_date"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PKR 100 | 5 Medicines"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_status" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

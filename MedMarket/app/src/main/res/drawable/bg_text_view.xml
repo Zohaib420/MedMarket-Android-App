@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/blueHint">
+
+    <item>
+
+        <shape android:shape="rectangle">
+
+            <stroke android:color="@color/gray"
+                android:width="0.8dp" />
+            <solid android:color="@color/whiteDarkInput"/>
+
+            <corners android:radius="@dimen/_12sdp"/>
+
+        </shape>
+
+    </item>
+
+</ripple>

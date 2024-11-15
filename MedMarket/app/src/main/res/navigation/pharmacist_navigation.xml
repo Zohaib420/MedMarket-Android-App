@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pharmacist_navigation.xml"
+    app:startDestination="@id/allMedicineFragment">
+
+<!--    <fragment-->
+<!--        android:id="@+id/pharmacistHomeFragment"-->
+<!--        android:name="com.hash.medmarket.ui.pharmacists.fragments.home.PharmacistHomeFragment"-->
+<!--        android:label="fragment_pharmcist_home"-->
+<!--        tools:layout="@layout/fragment_pharmcist_home" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_pharmacistHomeFragment_to_notificationFragment"-->
+<!--            app:destination="@id/notificationFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_pharmacistHomeFragment_to_allMedicineFragment"-->
+<!--            app:destination="@id/allMedicineFragment" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/storeManagementFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.extras.store.StoreManagementFragment"
+        android:label="fragment_store_management"
+        tools:layout="@layout/fragment_store_management" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.support.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/addNewMedicineFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.medicine.addNew.AddNewMedicineFragment"
+        android:label="fragment_add_new_medicine"
+        tools:layout="@layout/fragment_add_new_medicine" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.notification.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/allMedicineFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.medicine.allMedicine.AllMedicineFragment"
+        android:label="fragment_all_medicine"
+        tools:layout="@layout/fragment_all_medicine" >
+        <action
+            android:id="@+id/action_allMedicineFragment_to_addNewMedicineFragment"
+            app:destination="@id/addNewMedicineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allOrdersFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.orders.AllOrdersFragment"
+        android:label="AllOrdersFragment" >
+        <action
+            android:id="@+id/action_allOrdersFragment_to_viewPrescriptionFragment"
+            app:destination="@id/viewPrescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPrescriptionFragment"
+        android:name="com.hash.medmarket.ui.pharmacists.fragments.orders.receivedPriscriptions.ViewPrescriptionFragment"
+        android:label="fragment_view_prescription"
+        tools:layout="@layout/fragment_view_prescription" />
+</navigation>

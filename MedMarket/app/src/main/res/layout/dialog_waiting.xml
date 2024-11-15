@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/tvStatusLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_toEndOf="@id/pbWait"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_14ssp"
+                tools:ignore="UnusedAttribute"
+                tools:text="Status of loading" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/pbWait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:indeterminate="true"
+                app:indicatorColor="@color/blue"
+                app:indicatorSize="@dimen/_36sdp"
+                app:trackColor="@color/grayLight"
+                app:trackCornerRadius="@dimen/_2sdp"
+                app:trackThickness="@dimen/_2sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvStatusLoading"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toEndOf="@id/pbWait"
+                android:text="@string/please_wait"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_10ssp"
+                tools:ignore="UnusedAttribute" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

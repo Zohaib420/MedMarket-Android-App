@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:background="@drawable/bg_rounded_stroke">
+
+    <TextView
+        android:id="@+id/text_order_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Order ID: ABC123"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toStartOf="@+id/chipReject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_customer_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Customer: John Doe"-->
+<!--        android:textSize="@dimen/_10ssp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginBottom="@dimen/_2sdp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/text_order_id"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <TextView
+        android:id="@+id/text_order_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Order Date: January 1, 2022"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/text_order_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_order_id" />
+
+    <!-- Total cost -->
+<!--    <TextView-->
+<!--        android:id="@+id/text_total_cost"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Total Cost: $100.00"-->
+<!--        android:textSize="@dimen/_10ssp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginBottom="@dimen/_2sdp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/text_order_date"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@id/text_order_date"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PKR 100 | 5 Medicines"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_status" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:paddingVertical="10dp"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:chipBackgroundColor="@color/green"
+        app:chipCornerRadius="@dimen/_6sdp"
+        app:chipMinHeight="@dimen/_18sdp"
+        app:chipMinTouchTargetSize="0dp"
+
+        app:chipStrokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.chip.Chip
+
+
+        android:id="@+id/chipStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:paddingVertical="10dp"
+        android:text="Confirmed"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:chipBackgroundColor="@color/green"
+        app:chipCornerRadius="@dimen/_6sdp"
+        app:chipMinHeight="@dimen/_18sdp"
+        app:chipMinTouchTargetSize="0dp"
+        app:chipStrokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.chip.Chip
+
+        android:id="@+id/chipReject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:paddingVertical="10dp"
+        android:text="  Reject  "
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:chipBackgroundColor="@color/red"
+        app:chipCornerRadius="@dimen/_6sdp"
+        app:chipMinHeight="@dimen/_18sdp"
+        app:chipMinTouchTargetSize="0dp"
+        app:chipStrokeWidth="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/chipConfirm"
+        app:layout_constraintEnd_toEndOf="@+id/chipStatus"
+        app:layout_constraintStart_toStartOf="@+id/chipStatus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

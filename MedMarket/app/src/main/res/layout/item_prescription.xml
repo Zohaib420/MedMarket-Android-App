@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_stroke"
+    android:layout_margin="@dimen/_6sdp"
+    android:padding="@dimen/_12sdp">
+
+    <!-- Store Image -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPrescription"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/store_image"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/RoundedImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_store_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="Client Name"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/ivPrescription"
+        app:layout_constraintTop_toTopOf="@+id/ivPrescription"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <TextView
+        android:id="@+id/text_Phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/ivPrescription"
+        app:layout_constraintTop_toBottomOf="@id/text_store_name"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="Address"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9ssp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/ivPrescription"
+        app:layout_constraintTop_toBottomOf="@id/text_Phone"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:text="Available"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7ssp"
+        app:chipBackgroundColor="@color/green"
+        app:chipCornerRadius="@dimen/_6sdp"
+        app:chipMinHeight="@dimen/_18sdp"
+        app:chipMinTouchTargetSize="0dp"
+        app:chipStrokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPrescription"
+        app:layout_constraintStart_toEndOf="@+id/ivPrescription" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipReject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Available"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7ssp"
+        app:chipBackgroundColor="@color/red"
+        app:chipCornerRadius="@dimen/_6sdp"
+        app:chipMinHeight="@dimen/_18sdp"
+        app:chipMinTouchTargetSize="0dp"
+        app:chipStrokeWidth="0dp"
+        app:layout_constraintStart_toEndOf="@+id/chipConfirm"
+        app:layout_constraintTop_toTopOf="@+id/chipConfirm" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:text="Available"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7ssp"
+        app:chipBackgroundColor="@color/green"
+        app:chipCornerRadius="@dimen/_6sdp"
+        app:chipMinHeight="@dimen/_18sdp"
+        app:chipMinTouchTargetSize="0dp"
+        app:chipStrokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPrescription"
+        app:layout_constraintStart_toEndOf="@+id/ivPrescription" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

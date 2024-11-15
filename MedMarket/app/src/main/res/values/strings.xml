@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">MedMarket</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_slogan">MedMarket: Your partner in healthcare</string>
+    <string name="pharmacist_sign_up">Pharmacist Sign Up</string>
+    <string name="client_sign_up">Client Sign Up</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="password">Password</string>
+    <string name="have_any_account">Have any account? <font color="#2C8DEE"><b>Sign In</b></font></string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="address">Address</string>
+    <string name="upload_license">Upload License</string>
+    <string name="email_address">Email Address</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? <font color="#2C8DEE"><b>Sign Up</b></font></string>
+    <string name="forgot_msg">Enter your registered email below.</string>
+    <string name="send">Send</string>
+    <string name="medmarket">MedMarket</string>
+    <string name="navigation_header">Navigation Header</string>
+    <string name="help_and_support"><![CDATA[Help & Support]]></string>
+    <string name="profile_management">Profile Management</string>
+    <string name="store_management">Store Management</string>
+    <string name="find_a_medicine">Find a medicine</string>
+    <string name="top_store">Top Store</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="all_medicine">All Medicine</string>
+    <string name="medicines">Medicines</string>
+    <string name="orders">Orders</string>
+    <string name="inventory">Inventory</string>
+    <string name="n_a">N/A</string>
+    <string name="profile">Profile</string>
+    <string name="for_headache">For headache</string>
+    <string name="no_result">No Result</string>
+    <string name="add_new_medicine">Add New Medicine</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="enter_medicine_name">Enter Medicine Name</string>
+    <string name="description">Description</string>
+    <string name="enter_medicine_description">Enter Medicine Description</string>
+    <string name="price">Price</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="enter_quantity">Enter Quantity</string>
+    <string name="category">Category</string>
+    <string name="enter_category">Select Category</string>
+    <string name="add">Save</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_account">My Account</string>
+    <string name="no_orders_found">No Orders Found</string>
+    <string name="pharmacist_account_requests">Pharmacist Account Requests:</string>
+    <string name="admin">Admin</string>
+    <string name="pending">Pending</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="all_stores">All Stores</string>
+    <string name="add_new_store">Add New Store</string>
+    <string name="add_store">Add Store</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="all_orders">All Orders</string>
+    <string name="select_category">Select Category</string>
+    <string name="enable_camera_permission">Enable Camera Permission</string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="google_map_api_key">AIzaSyD3xw6oNEQx2fgshPGxnQ_ATQRjqcPmNf0</string>
+    <string name="fcm_key">AAAAw9lrGfY:APA91bGkBMHHDBXutI1VMHPjhXGsNZwz09qDc7jTaxUUKzjB2VUocmQChi17bkzCMjeyxsBjamD6BwkP4hEXf64DluFyujXPCjQyrsZQLAn6TcSkTx3H2aLIy2_qMJR8YbnI_nXLb5FK</string>
+
+</resources>

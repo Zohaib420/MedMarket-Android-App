@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation.xml"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hash.medmarket.ui.auth.fragments.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.hash.medmarket.ui.auth.fragments.intro.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_clientSignupFragment"
+            app:destination="@id/clientSignupFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_pharmacistSignUpFragment"
+            app:destination="@id/pharmacistSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientSignupFragment"
+        android:name="com.hash.medmarket.ui.auth.fragments.client.ClientSignupFragment"
+        android:label="fragment_client_signup"
+        tools:layout="@layout/fragment_client_signup" >
+        <action
+            android:id="@+id/action_clientSignupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pharmacistSignUpFragment"
+        android:name="com.hash.medmarket.ui.auth.fragments.pharmacist.signup.PharmacistSignUpFragment"
+        android:label="fragment_pharmacist"
+        tools:layout="@layout/fragment_pharmacist_signup" >
+        <action
+            android:id="@+id/action_pharmacistSignUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.hash.medmarket.ui.auth.fragments.forgot.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+</navigation>

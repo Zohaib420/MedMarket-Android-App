@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/myOrdersFragment2"
+            android:title="@string/my_orders"
+            android:icon="@drawable/ic_store"/>
+        <item
+            android:id="@+id/myAccountFragment2"
+            android:title="@string/my_account"
+            android:icon="@drawable/ic_profile"/>
+        <item
+            android:id="@+id/helpFragment2"
+            android:title="@string/help_and_support"
+            android:icon="@drawable/ic_info"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drw_logout"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_log_out" />
+    </group>
+
+</menu>

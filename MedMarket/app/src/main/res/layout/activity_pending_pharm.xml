@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="@dimen/_10sdp"
+    android:scrollbars="none"
+    tools:context=".ui.auth.activities.PendingPharmaActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/logout"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_16ssp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:text="Pending verification"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_24ssp" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerInParent="true"
+        android:text="We'll notify you when your\naccount is approved!"
+        android:textAlignment="center"
+        android:textColor="@color/blueVeryDark"
+        android:textSize="@dimen/_16ssp" />
+
+</RelativeLayout>

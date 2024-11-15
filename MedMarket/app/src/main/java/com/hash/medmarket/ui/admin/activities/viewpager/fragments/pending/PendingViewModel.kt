@@ -1,0 +1,67 @@
+package com.hash.medmarket.ui.admin.activities.viewpager.fragments.pending
+
+import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
+import com.hash.medmarket.database.model.Medicine
+import com.hash.medmarket.database.model.Order
+import com.hash.medmarket.database.model.Users
+
+class PendingViewModel : ViewModel() {
+
+    private val firestore = FirebaseFirestore.getInstance()
+
+    private val _users = MutableLiveData<List<Users>>()
+    val users: LiveData<List<Users>>
+        get() = _users
+
+
+
+    fun allPendingRequests() {
+        firestore.collection("Users")
+            .whereEqualTo("status", "pending")
+            .orderBy("timeStamp", Query.Direction.DESCENDING)
+            .get()
+            .addOnSuccessListener { documents ->
+                val usersList = mutableListOf<Users>()
+                for (document in documents) {
+                    val users = document.toObject(Users::class.java)
+                    usersList.add(users)
+                }
+                _users.value = usersList
+            }
+            .addOnFailureListener { exception ->
+                Log.e("ClientHomeViewModel", "Error getting medicines", exception)
+            }
+    }
+
+    fun updateOrderStatus(users: Users, onComplete: (Boolean) -> Unit) {
+        val orderId = users.userId ?: return
+        firestore.collection("Users")
+            .document(orderId)
+            .update("status", "approved")
+            .addOnSuccessListener {
+                onComplete(true)
+            }
+            .addOnFailureListener { exception ->
+                onComplete(false)
+            }
+    }
+    fun rejectRequest(users: Users, onComplete: (Boolean) -> Unit) {
+        val orderId = users.userId ?: return
+        firestore.collection("Users")
+            .document(orderId)
+            .update("status", "rejected")
+            .addOnSuccessListener {
+                onComplete(true)
+            }
+            .addOnFailureListener { exception ->
+                onComplete(false)
+            }
+    }
+
+
+}
